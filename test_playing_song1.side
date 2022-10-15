@@ -1,0 +1,236 @@
+{
+  "id": "d17b40bf-ec2b-4bd9-81db-c9ddac008f4d",
+  "version": "2.0",
+  "name": "youtube_music",
+  "url": "https://music.youtube.com",
+  "tests": [{
+    "id": "63dde1b4-b045-4396-bf0b-0b9be49bec49",
+    "name": "searching_music_or_artist",
+    "commands": [{
+      "id": "4f5e917a-e2b7-4d9b-93b1-01fdffeed6b2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7b28556-0c15-4635-9993-dab175629e6c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bf6cc06-69d1-4798-9012-3ff593ff439a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-icon",
+      "targets": [
+        ["css=.search-icon", "css:finder"],
+        ["xpath=//ytmusic-app-layout[@id='layout']/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div/tp-yt-paper-icon-button", "xpath:idRelative"],
+        ["xpath=//tp-yt-paper-icon-button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ef24380-5006-4330-8f7f-2031817759c2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.search-box > #input",
+      "targets": [
+        ["css=.search-box > #input", "css:finder"],
+        ["xpath=//input[@id='input']", "xpath:attributes"],
+        ["xpath=//ytmusic-app-layout[@id='layout']/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "lyodra"
+    }, {
+      "id": "216e3e9a-efb1-45cc-83b1-4782a07667f9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.search-box > #input",
+      "targets": [
+        ["css=.search-box > #input", "css:finder"],
+        ["xpath=//input[@id='input']", "xpath:attributes"],
+        ["xpath=//ytmusic-app-layout[@id='layout']/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "cf68edc8-17d5-4968-a53d-6a15702414f2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,24.799999237060547)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f8439bf-4de8-4eee-bd00-4af9ae9a8d57",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,178.39999389648438)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "95c674e7-c739-4708-94da-9dfcb5b43124",
+    "name": "playing_song",
+    "commands": [{
+      "id": "60017c24-2f6c-46c2-b370-84a91ffd68db",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77bcb43e-319e-4635-82f2-d8acdce97b3d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04364bf3-deb9-47df-a8bb-13c9ac023721",
+      "comment": "",
+      "command": "click",
+      "target": "id=placeholder",
+      "targets": [
+        ["id=placeholder", "id"],
+        ["css=#placeholder", "css:finder"],
+        ["xpath=//span[@id='placeholder']", "xpath:attributes"],
+        ["xpath=//ytmusic-app-layout[@id='layout']/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0582a238-5443-4268-8347-a63286e392e7",
+      "comment": "",
+      "command": "type",
+      "target": "css=.search-box > #input",
+      "targets": [
+        ["css=.search-box > #input", "css:finder"],
+        ["xpath=//input[@id='input']", "xpath:attributes"],
+        ["xpath=//ytmusic-app-layout[@id='layout']/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pesan terakhir lyodra"
+    }, {
+      "id": "1773d3c3-31a2-43bf-aac3-fa9d0bc9da3f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.search-box > #input",
+      "targets": [
+        ["css=.search-box > #input", "css:finder"],
+        ["xpath=//input[@id='input']", "xpath:attributes"],
+        ["xpath=//ytmusic-app-layout[@id='layout']/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8144a05a-6d33-4e1f-9ad0-15c6a153fb5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(1) > #contents > .style-scope > .left-items .icon",
+      "targets": [
+        ["css=.style-scope:nth-child(1) > #contents > .style-scope > .left-items .icon", "css:finder"],
+        ["xpath=(//ytmusic-play-button-renderer[@id='play-button']/div/yt-icon)[13]", "xpath:idRelative"],
+        ["xpath=//div/ytmusic-item-thumbnail-overlay-renderer/div/ytmusic-play-button-renderer/div/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e0023545-a582-42c1-85a9-591d6fad94ee",
+    "name": "song1",
+    "commands": [{
+      "id": "46035ad9-a398-4215-911b-05891f2ef315",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a91c58c-558f-4b14-9749-17ec8aa28aae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d52daa23-337f-4b16-900e-d5669cf864d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=icon",
+      "targets": [
+        ["id=icon", "id"],
+        ["css=.search-icon > #icon", "css:finder"],
+        ["xpath=//tp-yt-iron-icon[@id='icon']", "xpath:attributes"],
+        ["xpath=//ytmusic-app-layout[@id='layout']/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div/tp-yt-paper-icon-button/tp-yt-iron-icon", "xpath:idRelative"],
+        ["xpath=//tp-yt-iron-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5f2c130-7cc1-4fcf-85c7-abbfa25bd485",
+      "comment": "",
+      "command": "type",
+      "target": "css=.search-box > #input",
+      "targets": [
+        ["css=.search-box > #input", "css:finder"],
+        ["xpath=//input[@id='input']", "xpath:attributes"],
+        ["xpath=//ytmusic-app-layout[@id='layout']/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pesan terakhir"
+    }, {
+      "id": "08d3d7b6-46cd-4ab0-ba68-693afae4b4c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=suggestion-cell-0x0",
+      "targets": [
+        ["id=suggestion-cell-0x0", "id"],
+        ["css=#suggestion-cell-0x0", "css:finder"],
+        ["xpath=//yt-formatted-string[@id='suggestion-cell-0x0']", "xpath:attributes"],
+        ["xpath=//ytmusic-search-suggestion[@id='suggestion-0']/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//ytmusic-search-suggestion/yt-formatted-string", "xpath:position"],
+        ["xpath=//yt-formatted-string[contains(.,'pesan terakhir lyodra')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e7a2238-9355-4fb6-a4d3-dd4772501bc4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pesan Terakhir",
+      "targets": [
+        ["linkText=Pesan Terakhir", "linkText"],
+        ["css=.style-scope:nth-child(1) > #contents > .style-scope > .flex-columns > .title-column .yt-simple-endpoint", "css:finder"],
+        ["xpath=(//a[contains(text(),'Pesan Terakhir')])[2]", "xpath:link"],
+        ["xpath=//div[@id='contents']/ytmusic-responsive-list-item-renderer/div[2]/div/yt-formatted-string/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'watch?v=9YPX7WjPDp8')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ytmusic-responsive-list-item-renderer/div[2]/div/yt-formatted-string/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfff0ba0-1743-44a4-9b7e-6b9b3a66305a",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "linkText=Pesan Terakhir",
+      "targets": [
+        ["linkText=Pesan Terakhir", "linkText"],
+        ["css=.style-scope:nth-child(1) > #contents > .style-scope > .flex-columns > .title-column .yt-simple-endpoint", "css:finder"],
+        ["xpath=(//a[contains(text(),'Pesan Terakhir')])[2]", "xpath:link"],
+        ["xpath=//div[@id='contents']/ytmusic-responsive-list-item-renderer/div[2]/div/yt-formatted-string/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'watch?v=9YPX7WjPDp8')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ytmusic-responsive-list-item-renderer/div[2]/div/yt-formatted-string/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9b34b21a-3aa6-449d-bdd2-4e632886b3ff",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://music.youtube.com/"],
+  "plugins": []
+}
